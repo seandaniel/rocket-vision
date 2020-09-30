@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <!-- google fonts  -->
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+  <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() . "/wp-content/themes/starter-theme/styles.css"?>" />
   <?php wp_head(); ?>
 </head>
 
