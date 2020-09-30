@@ -8,25 +8,25 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <!-- google fonts  -->
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() . "/wp-content/themes/starter-theme/styles.css"?>" />
+  <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() . "/wp-content/themes/starter-theme/styles/styles.css"?>" />
   <?php wp_head(); ?>
 </head>
 
 
 <body <?php body_class(); ?>>
- <a href="#maincontent" class="skiplink">Go to Main Content</a>
+ <!-- <a href="#maincontent" class="skiplink">Go to Main Content</a> -->
 <header>
   <div class="main-nav">
     <div class="wrapper flex">
-      <button class="menu-button">
+      <!-- <button class="menu-button">
         <span></span>
         <span></span>
         <span></span>
         <span class="visuallyhidden">Menu</span>
-      </button>
+      </button> -->
       <?php wp_nav_menu( array(
         'theme_location' => 'primary',
-        'container_class' => 'menu'
+        'container_class' => 'main-menu'
       )); ?>
     </div>
   </div> 

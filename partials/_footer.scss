@@ -1,0 +1,15 @@
+footer {
+  background: $quaternaryColor;
+  padding: 25px 0;
+  .title-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.social-menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

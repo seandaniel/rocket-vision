@@ -1,0 +1,15 @@
+
+header {
+  padding: 50px 0;
+  .main-menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    li a {
+      transition: color .35s;
+      &:hover {
+        color: $tertiaryColor;
+      }
+    }
+  }
+}

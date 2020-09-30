@@ -17,12 +17,16 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h2 class="entry-title">
-        		<a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
-          	<?php the_title(); ?>
-        		</a>
-      	</h2>
-
+			<?php the_post_thumbnail('blog'); ?>
+			<div class="article-content">
+				<h3><?php the_title(); ?><h3>
+				<!-- date is only showing for first article -->
+				<h5><?php the_author() . "-" . the_date(); ?></h5>
+				<!-- cut the content at x character -->
+				<p><?php the_content(); ?></p>
+				<a class="button" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">Read More</a>
+			</div>
+			
 		</article><!-- #post-## -->
 <?php endwhile; // End the loop. Whew. ?>
 
