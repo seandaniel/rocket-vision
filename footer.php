@@ -3,7 +3,7 @@
 <footer>
   <div class="wrapper">
     <div class="title-nav-container">
-      <h3><?php
+      <h2><?php
 
       if ($title !== 'Rocket Vision') {
         $title = 'Rocket Vision';
@@ -11,7 +11,7 @@
         $title = wp_title();
       }
 
-      echo $title; ?></h3>
+      echo $title; ?></h2>
       <?php wp_nav_menu( array(
         'theme_location' => 'social',
         'container_class' => 'social-menu'

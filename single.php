@@ -1,19 +1,29 @@
 <?php get_header(); ?>
+
 <div class="wrapper">
+
   <div class="content">
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
       <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="entry-content">
-          <h4><?php the_category(); ?></h4>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
-          <h3><?php the_author(); ?></h3>
-          <p><?php the_content(); ?></p>
-          <?php wp_link_pages(array(
+
+          <div class="text-content">
+            <?php the_category(); ?>
+            <h1 class="entry-title"><?php the_title(); ?></h1>
+            <h2><?php echo "By " . get_the_author(); ?></h2>
+          </div>
+
+          <!-- not working -->
+          <?php the_post_thumbnail('blog-single'); ?>
+          
+
+        </div>
+
+                  <?php wp_link_pages(array(
             'before' => '<div class="page-link"> Pages: ',
             'after' => '</div>'
           )); ?>
-        </div><!-- .entry-content -->
 
       <!-- <div class="entry-utility">
           <?php base_theme_posted_in(); ?>
@@ -26,13 +36,16 @@
         <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
       </div> -->
 
-
-
+    <?php endwhile; // end of the loop. ?>
+    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+    <div class="blog-single-text">
+      <p><?php the_content(); ?></p>
+    </div>
     <?php endwhile; // end of the loop. ?>
 
   </div> <!-- /.content -->
 
-  <?php get_sidebar(); ?>
+  <!-- <?php get_sidebar(); ?> -->
 
 </div>
 

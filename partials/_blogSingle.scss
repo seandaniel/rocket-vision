@@ -1,0 +1,24 @@
+.entry-content {
+  display: flex;
+  justify-content: space-between;
+  .text-content {
+    a {
+      text-transform: uppercase;
+      color: $tertiaryColor;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    h2 {
+      font-weight: 700;
+      color: $tertiaryColor;
+    }
+  }
+}
+
+.blog-single-text {
+  margin-top: -50px;
+  z-index: -10;
+  background-color: $secondaryColor;
+  padding: 150px 30px 30px 30px;
+  margin-bottom: 100px;
+}

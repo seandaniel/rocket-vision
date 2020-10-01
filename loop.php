@@ -20,8 +20,7 @@
 			<?php the_post_thumbnail('blog'); ?>
 			<div class="article-content">
 				<h3><?php the_title(); ?><h3>
-				<!-- date is only showing for first article -->
-				<h5><?php the_author() . "-" . the_date(); ?></h5>
+				<h5><?php echo get_the_author() . " - " . get_the_date(); ?></h5>
 				<!-- cut the content at x character -->
 				<p><?php the_content(); ?></p>
 				<a class="button" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">Read More</a>
