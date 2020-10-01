@@ -65,7 +65,15 @@ wp_deregister_script('jquery');
     array( 'jquery'), //dependencies
     null, // version number
     true //load in footer
-  );
+	);
+	
+	wp_enqueue_script(
+		'fontAwesome',
+		"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://kit.fontawesome.com/740a9e10e2.js",
+		false, //dependencies
+  	null, //version number
+  	false //load in footer
+);
 }
 
 add_action( 'wp_enqueue_scripts', 'base_theme_scripts' );
