@@ -11,7 +11,6 @@
 
 			<h2>Nothing Found</h2>
 			<p>Sorry, but nothing matched your search criteria. Please try again with some different keywords.</p>
-			<?php get_search_form(); ?>
 
 		<?php endif; ?>
 	</div> <!-- /.content -->

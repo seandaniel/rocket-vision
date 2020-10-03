@@ -1,12 +1,12 @@
-<?php // If there are no posts to display, such as an empty archive page ?>
+<?php /* Template Name: Loop */ ?>
 
 <?php if ( ! have_posts() ) : ?>
 
 	<article id="post-0" class="post error404 not-found">
-		<h1 class="entry-title">Not Found</h1>
+		<h1 class="entry-title">No Articles Found</h1>
 		<section class="entry-content">
 			<p>Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.</p>
-			<?php get_search_form(); ?>
+			<?php get_sidebar(); ?>
 		</section><!-- .entry-content -->
 	</article><!-- #post-0 -->
 
@@ -17,10 +17,10 @@
 <?php while ( have_posts() ) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<?php the_post_thumbnail('blog'); ?>
+			<?php the_post_thumbnail('large'); ?>
 			<div class="article-content">
 				<h3><?php the_title(); ?><h3>
-				<h5><?php echo get_the_author() . " - " . get_the_date(); ?></h5>
+				<h4><?php echo get_the_author() . " - " . get_the_date(); ?></h4>
 				<!-- cut the content at x character -->
 				<p><?php the_content(); ?></p>
 				<a class="button" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">Read More</a>
@@ -33,4 +33,4 @@
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>
   <p class="alignleft"><?php next_posts_link('&laquo; Older Entries'); ?></p>
   <p class="alignright"><?php previous_posts_link('Newer Entries &raquo;'); ?></p>
-<?php endif; ?>
+<?php endif; ?> 

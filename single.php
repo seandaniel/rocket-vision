@@ -14,9 +14,7 @@
             <h2><?php echo "By " . get_the_author(); ?></h2>
           </div>
 
-          <!-- not working -->
-          <?php the_post_thumbnail('blog-single'); ?>
-          
+          <?php the_post_thumbnail('large'); ?>
 
         </div>
 

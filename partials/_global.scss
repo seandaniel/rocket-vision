@@ -24,6 +24,11 @@ h2 {
   margin-bottom: 25px;
 }
 
+h3 {
+  color: $tertiaryColor;
+  font-weight: 700;
+}
+
 p {
   margin: 0;
   font-weight: 400;
@@ -55,6 +60,7 @@ button {
 
 .button {
   display: inline-block;
+  font-weight: 700;
   font-size: 20px;
   margin-top: 20px;
   text-transform: uppercase;
@@ -73,4 +79,33 @@ button {
   max-width: 1200px;
   width: 95%;
   margin: 0 auto;
+}
+
+.secondary-heading-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+  h1 {
+    text-align: center;
+    width: 400px;
+  }
+  img {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    z-index: -5;
+    top: 30px; 
+    left: 225px;
+  }
+}
+
+form input {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 3px solid $tertiaryColor;
+  background: $primaryColor;
 }

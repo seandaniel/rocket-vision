@@ -1,4 +1,4 @@
-<?php /* Template Name: Home */ ?>
+<?php /* Template Name: Page Home*/ ?>
 
 <?php get_header(); ?>
 
@@ -9,8 +9,8 @@
   </div> <!--/.content -->
 
   <section class="hero-container">
-    <h1> <?php the_field('hero_heading'); ?></h1>
-    <p> <?php the_field('hero_text_paragraph'); ?></p>
+    <h1><?php the_field('hero_heading'); ?></h1>
+    <p><?php the_field('hero_text_paragraph'); ?></p>
     <?php
       $link = get_field('hero_link');
 

@@ -4,10 +4,10 @@
 
 <div class="wrapper">
 
-  <section class="about-heading-container">
+  <section class="secondary-heading-container">
     <h1><?php the_field('about_heading_1'); ?></h1>
     <?php 
-      $image = get_field('about_image');
+      $image = get_field('about_image_1');
       
       if( $image ) {
         echo wp_get_attachment_image( $image, 'large');
@@ -23,7 +23,7 @@
       <p><?php the_field('about_paragraph_3'); ?></p>
     </div>
       <?php 
-      $image = get_field('about_image_1');
+      $image = get_field('about_image_2');
       
       if( $image ) {
         echo wp_get_attachment_image( $image, 'large');
