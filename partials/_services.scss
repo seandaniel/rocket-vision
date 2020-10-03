@@ -1,0 +1,14 @@
+.services-container {
+  display: flex;
+  justify-content: center;
+  h1 {
+    text-align: center;
+    width: 400px;
+  }
+  img {
+    position: absolute;
+    z-index: -5;
+    top: 0; 
+    left: 150px;
+  }
+}
