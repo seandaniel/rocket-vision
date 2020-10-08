@@ -2,18 +2,24 @@
 <div class="wrapper">
   <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
       
-      <h1><?php the_title(); ?></h1>
-      <h2><?php the_field('job_title'); ?></h2>
-      <?php the_content(); ?>
-      <h3><?php the_field('favourite_movie'); ?></h3>
-      <h3><?php the_field('favourite_artist'); ?></h3>
-      <?php
-        $link = get_field('favourite_project');
+      <section class="single-member-section-1">
+        <div class="text-content">
+          <h1><?php the_title(); ?></h1>
+          <h2><?php the_field('job_title'); ?></h2>
+          <h3><span><?php echo get_field('favourite_title_1') . ' : '?></span><?php the_field('favourite_name_1'); ?></h3>
+          <h3><span><?php echo get_field('favourite_title_2') . ' : '?></span><?php the_field('favourite_name_2'); ?></h3>
+          <h3><span><?php echo get_field('favourite_title_3') . ' : '?></span><?php the_field('favourite_name_3'); ?></h3>
+        </div>
 
-        if( $link ) { ?>
-          <a class="button" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
-        <?php } 
-      ?>
+        <?php the_post_thumbnail('large'); ?>
+
+      </section>
+
+
+    <section class="single-member-section-2">
+      <p><?php the_content(); ?></p>
+    </section>
+
   <?php endwhile; ?>
 </div>
 

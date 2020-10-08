@@ -12,8 +12,6 @@
     <?php endwhile; // end the loop?>
   </div> <!-- /,content -->
 
-  <?php get_sidebar(); ?>
-
 </div>
 
 <?php get_footer(); ?>

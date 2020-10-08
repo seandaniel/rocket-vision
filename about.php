@@ -37,37 +37,37 @@
     <p><?php the_field('about_paragraph_5'); ?></p>
   </section>
 
-  <?php
-  
-
-  // The Query
-$the_query = new WP_Query(
-    array(
-      'post_type' => 'team_members',
-      'posts_per_page' => -1,
-      'order' => 'ASC'
-    )
-);
-
-  // The Loop
-
-  if ( $the_query->have_posts() ):
+  <section class="about-section-3">
+    <h2><?php the_field('about_heading_4'); ?></h2>
+    <?php
     
-    while ( $the_query->have_posts() ) :
+    $the_query = new WP_Query(
+        array(
+          'post_type' => 'team_members',
+          'posts_per_page' => -1,
+          'order' => 'ASC'
+        )
+    );
+
+    if ( $the_query->have_posts() ):
       
-      $the_query->the_post(); ?>
-          <?php the_post_thumbnail(); ?>
-          <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-          <h3><?php the_field('job_title'); ?></h3>
+      while ( $the_query->have_posts() ) :
+        
+        $the_query->the_post(); ?>
+            <?php the_post_thumbnail(); ?>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <h3><?php the_field('job_title'); ?></h3>
+        
+      <?php endwhile;
       
-    <?php endwhile;
-    
-    /* Restore original Post Data */
-    wp_reset_postdata();
-  else : ?>
-      <!-- no posts found -->
-    <p>There are no team members at this time.</p>
-  <?php endif; ?>
+      /* Restore original Post Data */
+      wp_reset_postdata();
+    else : ?>
+        <!-- no posts found -->
+      <p>There are no team members at this time.</p>
+    <?php endif; ?>
+  </section>
+
 
 </div>
 

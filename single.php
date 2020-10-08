@@ -6,7 +6,7 @@
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
       <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <div class="entry-content">
+        <section class="single-blog-section-1">
 
           <div class="text-content">
             <?php the_category(); ?>
@@ -16,9 +16,9 @@
 
           <?php the_post_thumbnail('large'); ?>
 
-        </div>
+        </section>
 
-                  <?php wp_link_pages(array(
+          <?php wp_link_pages(array(
             'before' => '<div class="page-link"> Pages: ',
             'after' => '</div>'
           )); ?>
@@ -36,14 +36,13 @@
 
     <?php endwhile; // end of the loop. ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-    <div class="blog-single-text">
+    <section class="single-blog-section-2">
       <p><?php the_content(); ?></p>
-    </div>
+    </section>
     <?php endwhile; // end of the loop. ?>
 
   </div> <!-- /.content -->
 
-  <!-- <?php get_sidebar(); ?> -->
 
 </div>
 

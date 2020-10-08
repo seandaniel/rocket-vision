@@ -1,0 +1,39 @@
+.single-member-section-1 {
+  display: flex;
+  justify-content: space-between;
+  .text-content {
+    h1 {
+      margin-bottom: 20px;
+      width: 500px;
+    }
+    h2 {
+      color: $tertiaryColor;
+      font-family: $primaryFont;
+      font-weight: 700;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.text-content h3 {
+  letter-spacing: 1.5px;
+  line-height: 34px;
+  span {
+    color: $primaryColor;
+    font-weight: 400;
+  }
+}
+
+.single-member-section-1 img {
+  height: 400px;
+  width: 600px;
+}
+
+.single-member-section-2 {
+  margin-top: -50px;
+  z-index: -10;
+  background-color: $secondaryColor;
+  padding: 150px 30px 30px 30px;
+  margin-bottom: 100px;
+}
