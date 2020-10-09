@@ -49,33 +49,21 @@
     ?>
   </section>
 
-  <!-- <section class="employee-text-img-container">
-    <?php 
-      $image = get_field('employee_image');
-        
-      if( $image ) {
-        echo wp_get_attachment_image( $image, 'large');
-      }
-    ?>
-    <div class="employee-text">
-      <h3><?php the_field('job_title'); ?></h3>
-      <h2><?php the_field('employee_name'); ?></h2>
-      <p><?php the_field('employee_paragraph_1'); ?></p>
-      <p><?php the_field('employee_paragraph_2'); ?></p>
-    </div>
-  </section> -->
-     <!-- Featured Employee section -->
+    <!-- Featured Employee section -->
    <?php $employee = get_field('featured_employee'); ?>
-   <section class="images-text wrapper">
+   <section class="employee-text-img-container">
          <?php echo wp_get_attachment_image(
              get_post_thumbnail_id($employee->ID),
              'square-large'
          );?>
          <?php if($employee->post_title): ?>
+          <div class="employee-text">
             <h3><?php the_field('section_title'); ?></h3>
             <h2><?php echo $employee->post_title; ?></h2>
-         <?php endif; ?>
-         <p><?php echo wp_trim_words($employee->post_content, 50); ?></p>
+            <?php endif; ?>
+            <p><?php echo wp_trim_words($employee->post_content, 50); ?></p>
+            <a class="button" href="<?php the_permalink() ?>">Learn More</a>
+          </div>
    </section>
 
 </div> 

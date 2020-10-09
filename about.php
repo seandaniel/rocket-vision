@@ -58,19 +58,15 @@
 
     // The Loop for leadership
     if ( $leadership_query->have_posts() ) { ?>
-      <div class="taxonomy-container">
-        <h2>Leadership</h2>
+        <h3>Leadership</h3>
+        <div class="taxonomy-container">
         <?php while ( $leadership_query->have_posts() ) { 
             $leadership_query->the_post(); ?>
-
-            <?php $job_title = get_field('job_title'); ?>
             
             <div class="team-member">
-                <a href="<?php the_permalink(); ?>">
-                    <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'medium', false, array('class' => 'featured-image')); ?>
-                    <h2><?php the_title(); ?></h2>
-                    <p><?php echo $job_title; ?></p>
-                </a>
+              <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'medium', false, array('class' => 'featured-image')); ?>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              <h4><?php the_field('job_title'); ?></h4>
             </div>
 
         <?php }
@@ -83,7 +79,7 @@
     <?php }
 
     ?>
-      </div>
+        </div>
     
     <?php
     // developers team query
@@ -101,18 +97,15 @@
     );
     // The Loop for developers team
     if ( $developers_query->have_posts() ) { ?>
-      <div class="taxonomy-container">
-        <h2>Development Team</h2>
+        <h3>Development Team</h3>
+        <div class="taxonomy-container">
         <?php while ( $developers_query->have_posts() ) { 
             $developers_query->the_post(); ?>
 
             <div class="team-member">
-                <a href="<?php the_permalink(); ?>">
-                    <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'medium', false, array('class' => 'featured-image')); ?>
-                    <h2><?php the_title(); ?></h2>
-                </a>
+              <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'medium', false, array('class' => 'featured-image')); ?>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </div>
-
         <?php }
         
         /* Restore original Post Data */
@@ -141,16 +134,14 @@
     );
     // The Loop for design team
     if ( $design_query->have_posts() ) { ?>
-      <div class="taxonomy-container">
-        <h2>Design Team</h2>
+        <h3>Design Team</h3>
+        <div class="taxonomy-container">
         <?php while ( $design_query->have_posts() ) { 
             $design_query->the_post(); ?>
 
             <div class="team-member">
-                <a href="<?php the_permalink(); ?>">
-                    <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'medium', false, array('class' => 'featured-image')); ?>
-                    <h2><?php the_title(); ?></h2>
-                </a>
+              <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'medium', false, array('class' => 'featured-image')); ?>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             </div>
 
         <?php }
@@ -162,8 +153,19 @@
         <p>There are no designers</p>
     <?php } ?>
 
-    </div>
+        </div>
 
+  </section>
+
+  <section class="about-section-4">
+    <h2><?php the_field('about_heading_5'); ?></h2>
+    <?php
+      $link = get_field('about_link_1');
+
+      if( $link ) { ?>
+        <a class="button" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
+      <?php } 
+    ?>
   </section>
 
 </div>
