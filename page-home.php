@@ -49,7 +49,7 @@
     ?>
   </section>
 
-  <section class="employee-text-img-container">
+  <!-- <section class="employee-text-img-container">
     <?php 
       $image = get_field('employee_image');
         
@@ -63,7 +63,20 @@
       <p><?php the_field('employee_paragraph_1'); ?></p>
       <p><?php the_field('employee_paragraph_2'); ?></p>
     </div>
-  </section>
+  </section> -->
+     <!-- Featured Employee section -->
+   <?php $employee = get_field('featured_employee'); ?>
+   <section class="images-text wrapper">
+         <?php echo wp_get_attachment_image(
+             get_post_thumbnail_id($employee->ID),
+             'square-large'
+         );?>
+         <?php if($employee->post_title): ?>
+            <h3><?php the_field('section_title'); ?></h3>
+            <h2><?php echo $employee->post_title; ?></h2>
+         <?php endif; ?>
+         <p><?php echo wp_trim_words($employee->post_content, 50); ?></p>
+   </section>
 
 </div> 
 
