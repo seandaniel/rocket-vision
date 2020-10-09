@@ -22,7 +22,9 @@
 
 .about-section-2 {
   background: $secondaryColor;
+  width: 90%;
   padding: 60px;
+  margin: 0 auto;
   h2 {
     text-align: center;
   }
@@ -30,3 +32,8 @@
     margin-bottom: 50px;
   }
 }
+
+.about-section-3 {
+  background: $secondaryColor;
+}
+
