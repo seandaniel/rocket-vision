@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <div class="wrapper">
-
+  
   <div class="content blog-container">
       <?php get_template_part( 'loop', 'index' );	?>
   </div> <!--/.content -->

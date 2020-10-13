@@ -7,8 +7,8 @@
       <h2><?php the_field('company_name', 'option'); ?></h2>
 
       <?php wp_nav_menu( array(
-        'theme_location' => 'social',
-        'container_class' => 'social-menu'
+        'theme_location' => 'footer',
+        'container_class' => 'footer-menu'
       )); ?>
 
     </div>

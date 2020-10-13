@@ -1,12 +1,9 @@
-<?php /* Template Name: Loop */ ?>
-
 <?php if ( ! have_posts() ) : ?>
 
 	<article id="post-0" class="post error404 not-found">
 		<h1 class="entry-title">No Articles Found</h1>
 		<section class="entry-content">
 			<p>Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.</p>
-			<?php get_sidebar(); ?>
 		</section><!-- .entry-content -->
 	</article><!-- #post-0 -->
 
@@ -21,13 +18,13 @@
 			<div class="article-content">
 				<h3><?php the_title(); ?><h3>
 				<h4><?php echo get_the_author() . " - " . get_the_date(); ?></h4>
-				<!-- cut the content at x character -->
-				<p><?php the_content(); ?></p>
+				<!-- wp_trim_words(get_the_content(), 50) -->
+				<p><?php the_excerpt(); ?></p>
 				<a class="button" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">Read More</a>
 			</div>
 			
 		</article><!-- #post-## -->
-<?php endwhile; // End the loop. Whew. ?>
+<?php endwhile;?>
 
 <?php // Display navigation to next/previous pages when applicable ?>
 <?php if (  $wp_query->max_num_pages > 1 ) : ?>

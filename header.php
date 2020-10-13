@@ -26,7 +26,7 @@
       </button> -->
       <?php wp_nav_menu( array(
         'theme_location' => 'primary',
-        'container_class' => 'main-menu'
+        'container_class' => 'primary-menu'
       )); ?>
     </div>
   </div> 

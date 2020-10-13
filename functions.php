@@ -25,7 +25,7 @@ function theme_setup() {
 	register_nav_menus( array(
 		'primary' => 'Primary Navigation',
 		'footer' => 'Footer Navigation',
-		'social' => 'Social Navigation'
+		// 'social' => 'Social Navigation'
 	) );
 
 	/*
