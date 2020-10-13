@@ -19,8 +19,7 @@
 				<h3><?php the_title(); ?><h3>
 				<h4><?php echo get_the_author() . " - " . get_the_date(); ?></h4>
 				<!-- wp_trim_words(get_the_content(), 50) -->
-				<p><?php the_excerpt(); ?></p>
-				<a class="button" href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">Read More</a>
+				<?php the_excerpt(); ?>
 			</div>
 			
 		</article><!-- #post-## -->
