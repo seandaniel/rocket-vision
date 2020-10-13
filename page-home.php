@@ -22,7 +22,7 @@
       $image = get_field('hero_image');
       
       if( $image ) {
-        echo wp_get_attachment_image( $image, 'large');
+        echo wp_get_attachment_image( $image, 'full');
       } 
     ?>
   </section>
@@ -44,7 +44,7 @@
       $image = get_field('about_image');
       
       if( $image ) {
-        echo wp_get_attachment_image( $image, 'large');
+        echo wp_get_attachment_image( $image, 'full');
       } 
     ?>
   </section>
@@ -54,7 +54,7 @@
    <section class="employee-text-img-container">
          <?php echo wp_get_attachment_image(
              get_post_thumbnail_id($employee->ID),
-             'square-large'
+             'full'
          );?>
          <?php if($employee->post_title): ?>
           <div class="employee-text">

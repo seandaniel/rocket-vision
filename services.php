@@ -10,7 +10,7 @@
       $image = get_field('services_image');
       
       if( $image ) {
-        echo wp_get_attachment_image( $image, 'large');
+        echo wp_get_attachment_image( $image, 'full');
       } 
     ?>
   </section>

@@ -10,7 +10,7 @@
       $image = get_field('contact_image_1');
       
       if( $image ) {
-        echo wp_get_attachment_image( $image, 'large');
+        echo wp_get_attachment_image( $image, 'full');
       } 
     ?>
   </section>
