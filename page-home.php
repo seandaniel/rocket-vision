@@ -62,7 +62,7 @@
             <h2><?php echo $employee->post_title; ?></h2>
             <?php endif; ?>
             <p><?php echo wp_trim_words($employee->post_content, 50); ?></p>
-            <a class="button" href="<?php the_permalink() ?>">Learn More</a>
+            <a class="button" href="<?php echo get_permalink() . '/team_members/' . str_replace(" ","-", strtolower($employee->post_title))  ?>">Learn More</a>
           </div>
    </section>
 
