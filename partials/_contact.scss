@@ -1,0 +1,27 @@
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  label {
+    display: flex;
+    font-size: 25px;
+    font-weight: 700;
+    flex-direction: column;
+    width: 50%;
+    input {
+      margin-top: 10px;
+      
+      background: $secondaryColor;
+      border: none;
+    }
+  }
+}
+
+.contact-form label:nth-child(5) {
+  margin-top: -100px;
+}
+
+.contact-form textarea {
+  background: $secondaryColor;
+  border: none;
+  margin-top: 10px;
+}

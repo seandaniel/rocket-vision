@@ -8,6 +8,8 @@
     <input type="submit" name="submit" value="Go" />
 </form>
 
+
+
   <div class="content">
       <?php get_template_part( 'loop', 'index' );	?>
   </div> <!--/.content -->
