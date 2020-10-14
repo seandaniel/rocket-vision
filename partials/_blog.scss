@@ -1,3 +1,22 @@
+.taxonomy select {
+  font-size: 30px;
+  font-weight: 700;
+  color: $primaryColor;
+  border: none;
+  display: block;
+  margin: 0 auto 75px auto;
+  text-align: center;
+  // appearance: none;
+  // background: url("styles/down-arrow.svg");
+  // background-repeat: no-repeat, repeat;
+  // background-position: right 10px top 60%, 0 0;
+  // background-size: 1.8rem;
+  background-color: $secondaryColor;
+  option {
+    border: 1px solid pink;
+  }
+}
+
 .blog-container {
   display: flex;
   flex-wrap: wrap;

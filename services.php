@@ -15,6 +15,16 @@
     ?>
   </section>
 
+  <section class="category-container">
+      <h2><?php the_field('category_container-1'); ?></h2>
+      <h2><?php the_field('category_container-2'); ?></h2>
+      <h2><?php the_field('category_container-3'); ?></h2>
+  </section>
+
+  <section class="category-information-container">
+      <p><?php the_field('category_content'); ?></p>
+  </section>
+
 </div>
 
 <?php get_footer(); ?>
