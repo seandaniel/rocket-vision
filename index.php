@@ -3,12 +3,10 @@
 
 <div class="wrapper">
 
-<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
-    <?php wp_dropdown_categories(); ?>
-    <input type="submit" name="submit" value="Go" />
-</form>
-
-
+  <section class="secondary-heading-container">
+    <h1><?php single_post_title(); ?></h1>
+    <?php single_post_thumbnail('full'); ?>
+  </section>
 
   <div class="content">
       <?php get_template_part( 'loop', 'index' );	?>
