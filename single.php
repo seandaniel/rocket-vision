@@ -10,7 +10,7 @@
 
           <div class="text-content">
             <?php the_category(); ?>
-            <h1 class="entry-title"><?php the_title(); ?></h1>
+            <h1><?php the_title(); ?></h1>
             <h2><?php echo "By " . get_the_author(); ?></h2>
           </div>
 

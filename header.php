@@ -14,16 +14,9 @@
 
 
 <body <?php body_class(); ?>>
- <!-- <a href="#maincontent" class="skiplink">Go to Main Content</a> -->
 <header>
   <div class="main-nav">
     <div class="wrapper flex">
-      <!-- <button class="menu-button">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span class="visuallyhidden">Menu</span>
-      </button> -->
       <?php wp_nav_menu( array(
         'theme_location' => 'primary',
         'container_class' => 'primary-menu'

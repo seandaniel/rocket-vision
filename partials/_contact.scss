@@ -1,26 +1,31 @@
-.contact-form {
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 175px;
+}
 
-  label {
-    display: flex;
-    font-size: 25px;
-    font-weight: 700;
-    flex-direction: column;
-    width: 600px;
-    margin-bottom: 50px;
-    span {
-      width: 600px;
-    }
-    input {
-      margin-top: 10px;
-      background: $secondaryColor;
-      border: none;
-    }
+.contact-form label {
+  display: flex;
+  font-size: 25px;
+  font-weight: 700;
+  flex-direction: column;
+  margin-bottom: 50px;
+  input {
+    padding: 0 10px;
+    color: $primaryColor;
+    margin-top: 10px;
+    background: $secondaryColor;
+    border: none;
   }
 }
+
 .contact-form textarea {
   background: $secondaryColor;
+  color: $primaryColor;
   border: none;
   margin-top: 10px;
+  resize: vertical;
 }
 
 .contact-form select {
@@ -28,14 +33,15 @@
   font-weight: 700;
   color: $primaryColor;
   border: none;
-  display: block;
+  margin-top: 20px;
+  padding: 20px 50px;
   text-align: center;
-  // appearance: none;
-  // background: url("styles/down-arrow.svg");
-  // background-repeat: no-repeat, repeat;
-  // background-position: right 10px top 60%, 0 0;
-  // background-size: 1.8rem;
-  background-color: $secondaryColor;
+  appearance: none;
+  background: url("down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px top 60%, 0 0;
+  background-size: 30px;
+  background-color: $tertiaryColor;
 }
 
 .contact-form input[type="submit"] {
@@ -43,7 +49,6 @@
   display: inline-block;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 20px;
   text-transform: uppercase;
   padding: 10px 15px;
   border: 3px solid $tertiaryColor;
@@ -57,4 +62,14 @@
   }
 }
 
-
+.map-location-container {
+  text-align: center;
+  img {
+    width: 500px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 25px;
+    color: $primaryColor;
+  }
+}
