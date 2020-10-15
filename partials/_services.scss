@@ -1,0 +1,22 @@
+.services-container {
+  margin-bottom: 225px;
+}
+
+.category-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  h2 {
+    font-size: 35px;
+    font-family: $primaryFont;
+    font-weight: 700;
+    text-align: center;
+    flex: 1 0;
+  }
+}
+
+.category-information-container {
+  background: $secondaryColor;
+  padding: 60px;
+  margin-bottom: 75px;
+}

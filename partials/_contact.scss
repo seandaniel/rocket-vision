@@ -1,12 +1,15 @@
 .contact-form {
-  display: flex;
-  flex-wrap: wrap;
+
   label {
     display: flex;
     font-size: 25px;
     font-weight: 700;
     flex-direction: column;
-    width: 50%;
+    width: 600px;
+    margin-bottom: 50px;
+    span {
+      width: 600px;
+    }
     input {
       margin-top: 10px;
       background: $secondaryColor;
@@ -14,13 +17,44 @@
     }
   }
 }
-
-.contact-form label:nth-child(5) {
-  margin-top: -100px;
-}
-
 .contact-form textarea {
   background: $secondaryColor;
   border: none;
   margin-top: 10px;
 }
+
+.contact-form select {
+   font-size: 30px;
+  font-weight: 700;
+  color: $primaryColor;
+  border: none;
+  display: block;
+  text-align: center;
+  // appearance: none;
+  // background: url("styles/down-arrow.svg");
+  // background-repeat: no-repeat, repeat;
+  // background-position: right 10px top 60%, 0 0;
+  // background-size: 1.8rem;
+  background-color: $secondaryColor;
+}
+
+.contact-form input[type="submit"] {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 3px solid $tertiaryColor;
+  background: inherit;
+  transition: color .35s, background .35s;
+  background: $primaryColor;
+  &:hover,
+  &:focus {
+    color: $secondaryColor;
+    background: inherit;
+  }
+}
+
+
