@@ -16,6 +16,15 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  footer .title-nav-container {
+    flex-direction: column;
+    h2 {
+      margin-bottom: 75px;
+    }
+  }
+}
+
 .footer-nav {
   display: flex;
   align-items: center;

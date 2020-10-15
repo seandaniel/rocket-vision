@@ -5,6 +5,12 @@
   margin-bottom: 175px;
 }
 
+@media (max-width: 1200px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
 .contact-form label {
   display: flex;
   font-size: 25px;
@@ -62,6 +68,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .contact-form input[type="submit"] {
+    margin-bottom: 75px;
+  }
+}
+
 .map-location-container {
   text-align: center;
   img {
@@ -71,5 +83,11 @@
   h3 {
     font-size: 25px;
     color: $primaryColor;
+  }
+}
+
+@media (max-width: 600px) {
+  .map-location-container img {
+    width: 100%;
   }
 }

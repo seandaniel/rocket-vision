@@ -16,12 +16,24 @@ h1 {
   font-weight: 700;
 }
 
+@media (max-width: 600px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
 h2 {
   font-family: $secondaryFont;
   font-size: 60px;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 40px;
+  }
 }
 
 h3 {
