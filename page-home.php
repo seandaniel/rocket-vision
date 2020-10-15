@@ -4,10 +4,6 @@
 
 <div class="wrapper">
 
-  <div class="content blog-container">
-      <?php get_template_part( 'about-services');	?>
-  </div> <!--/.content -->
-
   <section class="hero-container">
     <h1><?php the_field('hero_heading'); ?></h1>
     <p><?php the_field('hero_text_paragraph'); ?></p>

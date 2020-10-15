@@ -26,21 +26,14 @@
           'after' => '</div>'
         )); ?>
 
-        <!-- <div class="entry-utility">
-            <?php base_theme_posted_in(); ?>
-            <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?> 
-          </div>
-        </div> -->
-
-        <!-- <div id="nav-below" class="navigation">
-          <p class="nav-previous"><?php previous_post_link('%link', '&larr; %title'); ?></p>
-          <p class="nav-next"><?php next_post_link('%link', '%title &rarr;'); ?></p>
-        </div> -->
+        <div id="nav-below" class="navigation forward-backward-container">
+          <p class="nav-previous button"><?php previous_post_link('%link', '&larr; %title'); ?></p>
+          <!-- <p class="nav-next button"><?php next_post_link('%link', '%title &rarr;'); ?></p> -->
+        </div> 
 
     <?php endwhile; // end of the loop. ?>
 
-  </div> <!-- /.content -->
-
+  </div>
 
 </div>
 

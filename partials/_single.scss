@@ -32,3 +32,12 @@
   padding: 150px 30px 30px 30px;
   margin-bottom: 100px;
 }
+
+.forward-backward-container {
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: center;
+  p {
+    cursor: pointer;
+  }
+}

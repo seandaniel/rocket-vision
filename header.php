@@ -2,12 +2,27 @@
 <html <?php language_attributes(); ?>>
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- og meta tags -->
+  <meta property="og:title" content="Rocket Vision">
+  <!-- get_site_url/know host name -->
+  <!-- <meta property="og:image" content="https://seandaniel.github.io/git-check/metaImg.png">
+  <meta property="og:url" content="https://seandaniel.github.io/git-check/"> -->
+
+  <!-- Twitter meta tags -->
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="Rocket Vision">
+<!-- 
+  <meta property="twitter:image" content="https://seandaniel.github.io/git-check/favicon.png">
+  <meta property="twitter:url" content="https://seandaniel.github.io/git-check/" -->
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
   <!-- google fonts  -->
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"> 
+  <!-- css -->
+
   <link rel="stylesheet" type="text/css" href="<?php echo get_site_url() . "/wp-content/themes/starter-theme/styles/styles.css"?>" />
   <?php wp_head(); ?>
 </head>

@@ -1,1 +1,1 @@
-// No JavaScript here!
+console.log('This project is to showcase my WordPress skills, if you want to see JavaScript, look at other pieces in my portfolio! ---> https://www.seandegroot.com')

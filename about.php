@@ -65,7 +65,7 @@
             
             <div class="team-member">
               <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'medium', false, array('class' => 'featured-image')); ?>
-              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              <p><i class="fas fa-hand-point-right"></i><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></p>
               <h4><?php the_field('job_title'); ?></h4>
             </div>
 
@@ -104,7 +104,7 @@
 
             <div class="team-member">
               <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'medium', false, array('class' => 'featured-image')); ?>
-              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              <p><i class="fas fa-hand-point-right"></i><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></p>
             </div>
         <?php }
         
@@ -141,7 +141,7 @@
 
             <div class="team-member">
               <?php echo wp_get_attachment_image(get_post_thumbnail_id(), 'medium', false, array('class' => 'featured-image')); ?>
-              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              <p><i class="fas fa-hand-point-right"></i><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></p>
             </div>
 
         <?php }
