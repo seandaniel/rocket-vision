@@ -9,8 +9,8 @@
 		<h1 class="entry-title">No Articles Found</h1>
 		<section class="entry-content">
 			<p>Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post.</p>
-		</section><!-- .entry-content -->
-	</article><!-- #post-0 -->
+		</section>
+	</article>
 
 <?php endif; // end if there are no posts ?>
 
@@ -27,14 +27,16 @@
             <?php the_excerpt(); ?>
           </div>
           
-        </article><!-- #post-## -->
+        </article>
 
 		<?php endwhile;?>
   </div>
 
 
 <?php // Display navigation to next/previous pages when applicable ?>
-<?php if (  $wp_query->max_num_pages > 1 ) : ?>
-  <p class="alignleft"><?php next_posts_link('&laquo; Older Entries'); ?></p>
-  <p class="alignright"><?php previous_posts_link('Newer Entries &raquo;'); ?></p>
-<?php endif; ?> 
+<div class="entries-container">
+  <?php if (  $wp_query->max_num_pages > 1 ) : ?>
+    <p class="alignleft"><?php next_posts_link('&laquo; Older Entries'); ?></p>
+    <p class="alignright"><?php previous_posts_link('Newer Entries &raquo;'); ?></p>
+  <?php endif; ?> 
+</div>

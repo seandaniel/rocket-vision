@@ -1,17 +1,18 @@
 .taxonomy select {
+  display: block;
   font-size: 30px;
   font-weight: 700;
   color: $primaryColor;
+  padding: 20px 50px;
   border: none;
-  display: block;
   margin: 0 auto 75px auto;
   text-align: center;
-  // appearance: none;
-  // background: url("styles/down-arrow.svg");
-  // background-repeat: no-repeat, repeat;
-  // background-position: right 10px top 60%, 0 0;
-  // background-size: 1.8rem;
-  background-color: $secondaryColor;
+  appearance: none;
+  background: url("down-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px top 60%, 0 0;
+  background-size: 30px;
+  background-color: $tertiaryColor;
 }
 
 .blog-container {
@@ -31,7 +32,7 @@
 }
 
 .blog-container article:nth-child(n+7) {
-  margin-bottom: 150px;
+  margin-bottom: 75px;
 }
 
 .article-content {
@@ -79,15 +80,25 @@
   }
 }
 
-// no articles to be shown
-.blog-container .not-found {
+.entries-container {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 0;
-  h1 {
-    margin-bottom: 20px;
-  }
+  justify-content: center;
+  margin-bottom: 75px;
 }
 
-// no articles found when searched
+.alignleft a, .alignright a {
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 3px solid $tertiaryColor;
+  background: $primaryColor;
+  color: $secondaryColor;
+  transition: color .35s, background .35s;
+  &:hover,
+  &:focus {
+    color: $primaryColor;
+    background: inherit;
+  }
+}
