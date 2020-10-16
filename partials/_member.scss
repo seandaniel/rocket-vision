@@ -50,4 +50,11 @@
   background-color: $secondaryColor;
   padding: 150px 30px 30px 30px;
   margin-bottom: 100px;
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.single-member-section-2 p:last-child {
+  margin-bottom: 0;
 }

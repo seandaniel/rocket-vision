@@ -47,6 +47,13 @@
   background-color: $secondaryColor;
   padding: 150px 30px 30px 30px;
   margin-bottom: 100px;
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.single-blog-section-2 p:last-child {
+  margin-bottom: 0;
 }
 
 .forward-backward-container {

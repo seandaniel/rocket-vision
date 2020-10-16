@@ -23,8 +23,8 @@
           <div class="article-content">
             <h3><?php the_title(); ?><h3>
             <h4><?php echo get_the_author() . " - " . get_the_date(); ?></h4>
-            <!-- wp_trim_words(get_the_content(), 50) -->
-            <?php the_excerpt(); ?>
+            <p><?php echo wp_trim_words(get_the_content(), 45); ?></p>
+            <a class="button" href="<?php the_permalink(); ?>">Read More</a>
           </div>
           
         </article>
