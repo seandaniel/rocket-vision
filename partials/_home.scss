@@ -9,7 +9,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .hero-container p {
     width: 100%;
   }
@@ -40,6 +40,12 @@
   img {
     width: 500px;
     height: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-text-img-container {
+    padding: 20px;
   }
 }
 
@@ -83,5 +89,11 @@
     .employee-text {
       width: 100%;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .employee-text-img-container {
+    padding: 20px;
   }
 }

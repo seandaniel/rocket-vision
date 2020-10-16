@@ -24,8 +24,8 @@ function theme_setup() {
 
 	register_nav_menus( array(
 		'primary' => 'Primary Navigation',
+		'primary-mobile' => 'Primary Mobile Navigation',
 		'footer' => 'Footer Navigation',
-		// 'social' => 'Social Navigation'
 	) );
 
 	/*

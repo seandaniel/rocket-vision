@@ -1,1 +1,11 @@
-console.log('This project is to showcase my WordPress skills, if you want to see JavaScript, look at other pieces in my portfolio! ---> https://www.seandegroot.com')
+$(function() {
+  $('.mobile-toggle-open').on('click', (e) => {
+    e.preventDefault();
+    $('.mobile-nav').fadeIn().css('display', 'block');
+  })
+
+  $('.mobile-toggle-close').on('click', (e) => {
+    e.preventDefault();
+    $('.mobile-nav').fadeOut();
+  })
+});

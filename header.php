@@ -27,6 +27,14 @@
   <?php wp_head(); ?>
 </head>
 
+<!-- mobile navigation -->
+<div class="mobile-nav">
+  <button class="mobile-toggle-close"><i class="fas fa-hamburger"></i></button>
+  <?php wp_nav_menu( array(
+    'theme_location' => 'primary-mobile',
+    'container_class' => 'primary-mobile-menu'
+  )); ?>
+</div>
 
 <body <?php body_class(); ?>>
 <header>
@@ -36,6 +44,7 @@
         'theme_location' => 'primary',
         'container_class' => 'primary-menu'
       )); ?>
+      <button class="mobile-toggle-open"><i class="fas fa-hamburger"></i></button>
     </div>
   </div> 
 </header>

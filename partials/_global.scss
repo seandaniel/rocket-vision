@@ -106,11 +106,11 @@ button {
     width: 400px;
   }
   img {
-    width: 500px;
-    height: auto;
     position: absolute;
+    top: 100px;
     z-index: -5;
-    top: 100px; 
-    left: 225px;
+    right: 0;
+    height: 600px;
+    width: auto;
   }
 }
