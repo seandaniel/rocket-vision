@@ -16,6 +16,12 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .single-member-section-1 {
+    flex-direction: column;
+  }
+}
+
 .text-content h3 {
   letter-spacing: 1.5px;
   line-height: 34px;
@@ -28,6 +34,14 @@
 .single-member-section-1 img {
   height: 400px;
   width: 600px;
+}
+
+
+@media (max-width: 1100px) {
+  .single-member-section-1 img {
+    margin-top: 75px;
+    width: 100%;
+  }
 }
 
 .single-member-section-2 {

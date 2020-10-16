@@ -13,6 +13,16 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .single-blog-section-1 {
+    align-items: center;
+    flex-direction: column;
+    .text-content {
+      margin-bottom: 75px;
+    }
+  }
+}
+
 .text-content h2 {
   color: $tertiaryColor;
   font-family: $primaryFont;
@@ -23,6 +33,12 @@
 .single-blog-section-1 img {
   height: 400px;
   width: 600px;
+}
+
+@media (max-width: 700px) {
+  .single-blog-section-1 img {
+    width: 100%;
+  }
 }
 
 .single-blog-section-2 {

@@ -57,6 +57,7 @@
 @media (max-width: 500px) {
   .about-section-2 {
     padding: 20px;
+    width: 100%;
   }
 }
 
@@ -122,6 +123,7 @@
 .team-member {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   img {
     border-radius: 50%;
@@ -147,7 +149,6 @@
   
   .team-member {
     margin-bottom: 40px;
-    align-items: center;
   }
 }
 
