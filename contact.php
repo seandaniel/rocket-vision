@@ -15,23 +15,13 @@
     ?>
   </section>
 
-  <div class="content contact-container">
+  <section class="content contact-container">
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
       <?php the_content(); ?>
     <?php endwhile; // end the loop?>
-    <div class="map-location-container">
-      <?php 
-        $image = get_field('contact_image_2');
-        
-        if( $image ) {
-          echo wp_get_attachment_image( $image, 'full');
-        } 
-      ?>
-      <h3><?php the_field('address'); ?></h3>
-
-    </div>
-  </div>
+    <h3><?php the_field('address'); ?></h3>
+  </section>
 
 </div>
 
