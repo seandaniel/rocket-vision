@@ -1,6 +1,6 @@
 <form class="taxonomy" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
     <?php wp_dropdown_categories(); ?>
-    <input type="submit" name="submit" value="Go" class="sr-only"/>
+    <input class="button" type="submit" name="submit" value="Go"/>
 </form>
 
 <?php if ( ! have_posts() ) : ?>

@@ -1,19 +1,46 @@
-.taxonomy select {
-  display: block;
-  font-size: 30px;
-  font-weight: 700;
-  color: $primaryColor;
-  padding: 20px 50px;
-  border: none;
-  margin: 0 auto 75px auto;
-  text-align: center;
-  appearance: none;
-  background: url("down-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 15px top 60%, 0 0;
-  background-size: 30px;
-  background-color: $tertiaryColor;
-  cursor: pointer;
+.taxonomy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+  select {
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    color: $primaryColor;
+    padding: 20px 50px;
+    border: none;
+    text-align: center;
+    appearance: none;
+    background: url("down-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right 15px top 60%, 0 0;
+    background-size: 30px;
+    background-color: $tertiaryColor;
+    cursor: pointer;
+  }
+  .button {
+    background: $primaryColor;
+    cursor: pointer;
+    height: 74.5px;
+    margin-top: 0;
+    &:hover,
+    &:focus {
+      background: inherit;
+      color: $primaryColor;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .taxonomy select {
+    font-size: 20px;
+    padding: 15px 35px;
+    background-position: right 15px top 55%, 0 0;
+    background-size: 20px;
+  }
+  .taxonomy .button {
+    height: auto;
+  }
 }
 
 .blog-container {
@@ -135,4 +162,12 @@
     color: $primaryColor;
     background: inherit;
   }
+}
+
+// no articles found
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
